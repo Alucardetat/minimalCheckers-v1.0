@@ -1,86 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>minimalCheckers v1.0</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>minimalCheckers v1.0</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="board">
-    <!-- Row One -->
-    <div class="square black"></div>
-    <div class="square white"></div>
-    <div class="square black"><div class="piece red-piece"></div></div>
-    <div class="square white"></div>
-    <div class="square black"></div>
-    <div class="square white"></div>
-    <div class="square black"></div>
-    <div class="square white"></div>
-    <!-- Row Two -->
-    <div class="square white"></div>
-    <div class="square black"><div class="piece red-piece"></div></div>
-    <div class="square white"></div>
-    <div class="square black"></div>
-    <div class="square white"></div>
-    <div class="square black"></div>
-    <div class="square white"></div>
-    <div class="square black"></div>
-    <!-- Row Three -->
-    <div class="square white"></div>
-    <div class="square black"><div class="piece red-piece"></div></div>
-    <div class="square white"></div>
-    <div class="square black"></div>
-    <div class="square white"></div>
-    <div class="square black"></div>
-    <div class="square white"></div>
-    <div class="square black"></div>
-    <!-- Row Four -->
-    <div class="square white"></div>
-    <div class="square black"><div class="piece red-piece"></div></div>
-    <div class="square white"></div>
-    <div class="square black"></div>
-    <div class="square white"></div>
-    <div class="square black"></div>
-    <div class="square white"></div>
-    <div class="square black"></div>
-    <!-- Row Five -->
-    <div class="square white"></div>
-    <div class="square black"><div class="piece red-piece"></div></div>
-    <div class="square white"></div>
-    <div class="square black"></div>
-    <div class="square white"></div>
-    <div class="square black"></div>
-    <div class="square white"></div>
-    <div class="square black"></div>
-    <!-- Row Six -->
-    <div class="square white"></div>
-    <div class="square black"><div class="piece red-piece"></div></div>
-    <div class="square white"></div>
-    <div class="square black"></div>
-    <div class="square white"></div>
-    <div class="square black"></div>
-    <div class="square white"></div>
-    <div class="square black"></div>
-    <!-- Row Seven -->
-    <div class="square white"></div>
-    <div class="square black"><div class="piece red-piece"></div></div>
-    <div class="square white"></div>
-    <div class="square black"></div>
-    <div class="square white"></div>
-    <div class="square black"></div>
-    <div class="square white"></div>
-    <div class="square black"></div>
-    <!--Row Eight -->
-    <div class="square white"></div>
-    <div class="square black"><div class="piece red-piece"></div></div>
-    <div class="square white"></div>
-    <div class="square black"></div>
-    <div class="square white"></div>
-    <div class="square black"></div>
-    <div class="square white"></div>
-    <div class="square black"></div>
-</div>
-<script src="main.js"></script>
+  <div class="container">
+    <div class="board">
+        <!-- Player Piece Counter -->
+        <div class="counter player1-wins">
+            <span>Player 1: 0</span>
+          </div>
+          <div class="counter player2-wins">
+            <span>Player 2: 0</span>
+          </div>
+      <!-- Checkerboard Squares -->
+      <div class="row">
+        <!-- Row 1 -->
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+      </div>
+      <div class="row">
+        <!-- Row 2 -->
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+      </div>
+      <div class="row">
+        <!-- Row 3 -->
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+      </div>
+      <div class="row">
+        <!-- Row 4 -->
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+      </div>
+      <div class="row">
+        <!-- Row 5 -->
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+      </div>
+      <div class="row">
+        <!-- Row 6 -->
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+      </div>
+      <div class="row">
+        <!-- Row 7 -->
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+      </div>
+      <div class="row">
+        <!-- Row 8 -->
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+        <div class="square white"></div>
+        <div class="square black"></div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
 </body>
 </html>

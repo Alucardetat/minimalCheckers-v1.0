@@ -1,0 +1,76 @@
+body {
+    background-image: linear-gradient(to top right, rgba(79, 51, 176, 1.0), rgba(210, 53, 165));
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .board {
+    display: inline-block;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .square {
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+
+  .counter {
+    position: absolute;
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+  }
+  
+  .player1-counter {
+    top: 10px;
+    left: 10px;
+  }
+  
+  .player2-counter {
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .white {
+    background-color: #1b2f38;
+  }
+  
+  .black {
+    background-color: #071115;
+  }
+  
+  .piece {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+  }
+  
+  .red-piece,
+  .black-piece {
+    top: 10%;
+    left: 10%;
+  }
+  
+  .red-piece {
+    background-color: #ff0000;
+  }
+  
+  .black-piece {
+    background-color: #000;
+  }  
