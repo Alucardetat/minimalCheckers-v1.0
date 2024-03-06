@@ -36,12 +36,12 @@ body {
     border-radius: 10px;
   }
   
-  .player1-counter {
+  .player1-wins {
     top: 10px;
     left: 10px;
   }
   
-  .player2-counter {
+  .player2-wins {
     bottom: 10px;
     right: 10px;
   }
