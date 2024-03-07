@@ -36,12 +36,12 @@ body {
     border-radius: 10px;
   }
   
-  .player1-wins {
+  .cpu-wins {
     top: 10px;
     left: 10px;
   }
   
-  .player2-wins {
+  .player-wins {
     bottom: 10px;
     right: 10px;
   }
